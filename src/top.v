@@ -13,7 +13,7 @@ module top(input clk, ch1, ch2, ch3, ch4, RTC, reset,
   wire[4:0] mux0_data,mux1_data,mux2_data,mux3_data,mux4_data,mux5_data,mux6_data,mux7_data,mux8_data,mux9_data,mux10_data,mux11_data;
   //wire[2:0] mux0_address,mux1_address,mux2_address,mux3_address,mux4_address,mux5_address,mux6_address,mux7_address,mux8_address,mux9_address,mux10_address,mux11_address;
   wire mux0_out,mux1_out,mux2_out,mux3_out,mux4_out,mux5_out,mux6_out,mux7_out,mux8_out,mux9_out,mux10_out,mux11_out;
-  wire a0, a1, a2, SL;//, out_rst;
+  wire a0, a1, a2, SL, out_rst;
   //wire reset;
   wire ch1w,ch2w,ch3w,ch4w;
   
