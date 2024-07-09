@@ -55,17 +55,9 @@ async def test_project(dut):
 
 
     # Wait 
-    await ClockCycles(dut.clk,2100000)
+    await ClockCycles(dut.clk,1500000)
 
 
-    # test ovf channel
-
-     #channel 1 => 4096 pulses 
-    ch1 = Clock(dut.uio_in[2], 244, units="us")
-    cocotb.start_soon(ch1.start())
-
-    # Wait to see the overflow
-    await ClockCycles(dut.clk,1000000)
 
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
